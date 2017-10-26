@@ -20,11 +20,11 @@ WIN_COMBINATIONS = [
 #     win_index_1 = win_combination[0]
 #     win_index_2 = win_combination[1]
 #     win_index_3 = win_combination[2]
-# 
+#
 #     position_1 = board[win_index_1]
 #     position_2 = board[win_index_2]
 #     position_3 = board[win_index_3]
-# 
+#
 #     if position_1 == "X" && position_2 =="X" && position_3 == "X" || position_1 == "O" && position_2 =="O" && position_3 == "O"
 #       win_combination
 #     else
@@ -56,18 +56,18 @@ def over?(board)
   !!won?(board) || draw?(board) || full?(board)
 end
 
-# def winner(board)
-#   game_status = won?(board)
-#   el = game_status[0]
-#   # board[el]
-#
-#   if !!game_status
-#     board[el][0]
-#   end
-# end
-
 def winner(board)
-  if winning_combo = won?(board)
-    board[winning_combo.first]
+  game_status = won?(board)
+  el = game_status[0]
+  # board[el]
+
+  if !!game_status
+    board[el]
   end
 end
+
+# def winner(board)
+#   if winning_combo = won?(board)
+#     board[winning_combo.first]
+#   end
+# end
