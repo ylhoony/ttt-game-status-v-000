@@ -61,8 +61,8 @@ def winner(board)
   if !!game_status 
     el = game_status[0]
     board[el][0]
-  else
-    false
+  # else
+  #   false
   end
 end
 
