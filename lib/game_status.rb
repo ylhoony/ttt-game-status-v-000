@@ -48,12 +48,18 @@ def over?(board)
   !!won?(board) || draw?(board) || full?(board)
 end
 
-def winner(board)
-  game_status = won?(board)
-  el = game_status[0]
-  # board[el]
+# def winner(board)
+#   game_status = won?(board)
+#   el = game_status[0]
+#   # board[el]
+# 
+#   if !!game_status
+#     board[el][0]
+#   end
+# end
 
-  if !!game_status
-    board[el][0]
+def winner(board)
+  if winning_combo = won?(board)
+    board[winning_combo.first]
   end
 end
