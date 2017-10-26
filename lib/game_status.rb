@@ -47,3 +47,8 @@ def over?(board)
   # true if the board has been won, is a draw, or is full.
   !!won?(board) || draw?(board) || full?(board)
 end
+
+def winner
+
+end
+
