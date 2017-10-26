@@ -34,7 +34,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.reject? do |e|
+  board.none? do |e|
     e === " " || e === ""
   end
 end
