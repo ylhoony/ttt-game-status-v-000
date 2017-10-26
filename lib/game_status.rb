@@ -60,8 +60,9 @@ def winner(board)
   game_status = won?(board)
   el = game_status[0]
   # board[el]
-
-  !!game_status ? board[el] : nil
+  puts !!game_status
+  puts board[el]
+  !!game_status ? board[el] : false
 end
 
 # def winner(board)
