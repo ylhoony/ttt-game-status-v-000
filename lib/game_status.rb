@@ -49,6 +49,10 @@ def over?(board)
 end
 
 def winner(board)
-  game_status = win?(board) 
-  !!game_status ? board[game_status][0] : false
+  game_status = win?(board)
+  if !!game_status 
+    board[game_status][0]
+  else
+    false
+  end
 end
