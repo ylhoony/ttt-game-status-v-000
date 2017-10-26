@@ -61,7 +61,7 @@ def winner(board)
   el = game_status[0]
   # board[el]
 
-  !!game_status ? board[el] : false
+  !!game_status ? board[el] : nil
 end
 
 # def winner(board)
