@@ -50,9 +50,6 @@ end
 
 def winner(board)
   game_status = win?(board)
-  if !!game_status 
-    board[game_status][0]
-  else
-    false
-  end
+  el = game_status[0]
+  board[el]
 end
