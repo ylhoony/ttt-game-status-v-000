@@ -58,11 +58,12 @@ end
 
 def winner(board)
   game_status = won?(board)
-  el = game_status[0]
-  # board[el]
-  puts !!game_status
-  puts board[el]
-  !!game_status ? board[el] : false
+  if !!game_status 
+    el = game_status[0]
+    board[el][0]
+  else
+    false
+  end
 end
 
 # def winner(board)
