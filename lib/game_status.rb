@@ -51,5 +51,7 @@ end
 def winner(board)
   game_status = won?(board)
   el = game_status[0]
-  board[el]
+  # board[el]
+
+  !!game_status ? board[el][0] : false
 end
