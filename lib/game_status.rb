@@ -49,7 +49,7 @@ def over?(board)
 end
 
 def winner(board)
-  game_status = win?(board)
+  game_status = won?(board)
   el = game_status[0]
   board[el]
 end
